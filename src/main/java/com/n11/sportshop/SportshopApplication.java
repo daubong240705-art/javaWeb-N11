@@ -2,12 +2,16 @@ package com.n11.sportshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
+// @SpringBootApplication
+@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class})
 public class SportshopApplication {
 		public static void main(String[] args) {
-		System.out.println("Hello");
-		SpringApplication.run(SportshopApplication.class, args);
+		ApplicationContext beans = SpringApplication.run(SportshopApplication.class, args);
+		for (String s : beans.getBeanDefinitionNames()) {
+			System.out.println(s);
+		}
 	}
 
 }
