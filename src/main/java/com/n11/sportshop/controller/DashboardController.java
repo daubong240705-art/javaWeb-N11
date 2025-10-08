@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DashboardController {
-    @GetMapping("/test")
+    @GetMapping("/")
     public String getHelloWorldPage(Model model) {
-        return "admin/index";
+        return "client/homepage/index";
     }
 }
