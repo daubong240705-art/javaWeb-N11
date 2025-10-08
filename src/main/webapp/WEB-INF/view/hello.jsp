@@ -1,5 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
-  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- <%@page contentType="text/html" pageEncoding="UTF-8" %>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
     <!DOCTYPE html>
     <html lang="en">
 
@@ -14,11 +14,11 @@
       <meta name="keywords" content="Online Store">
       <meta name="description" content="Stylish - Shoes Online Store HTML Template">
 
-      <link rel="stylesheet" href="/css/vendor.css">
-      <link rel="stylesheet" type="text/css" href="/css/style.css">
+      <link rel="stylesheet" href="css/vendor.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900;1,900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
         rel="stylesheet">
