@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 
+
+
 @Controller
 public class DashboardController {
     @GetMapping("/")
@@ -17,5 +19,17 @@ public class DashboardController {
     public String getDashBoardPage() {
         return "admin/dashboard/show";
     }
+    
+
+    @GetMapping("/admin/table")
+    public String getMethodName() {
+        return "admin/dashboard/tables";
+    }
+
+    @GetMapping("/admin/user")
+    public String getUserPage() {
+        return "admin/user/show";
+    }
+    
     
 }
