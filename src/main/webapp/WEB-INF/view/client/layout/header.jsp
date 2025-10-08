@@ -35,7 +35,7 @@
         </head>
 
         <body>
-            <header class="header_area sticky-header">
+            <header class="header_area" >
                 <div class="main_menu">
                     <jsp:include page="../layout/navigation.jsp" />
                 </div>

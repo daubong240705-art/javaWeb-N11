@@ -10,11 +10,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-
 @Configuration
 @EnableWebMvc
 // Bật cấu hình MVC nhưng phải tự config lại đường dẫn để Spring đọc file 
-public class WebMvcConfig implements WebMvcConfigurer{
+public class WebMvcConfig implements WebMvcConfigurer {
+
     @Bean
     public ViewResolver viewResolver() {
         final InternalResourceViewResolver bean = new InternalResourceViewResolver();
@@ -37,7 +37,7 @@ public class WebMvcConfig implements WebMvcConfigurer{
         registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/");
         registry.addResourceHandler("/images/**").addResourceLocations("/resources/images/");
         registry.addResourceHandler("/client/**").addResourceLocations("/resources/client/");
-
+        registry.addResourceHandler("/admin/**").addResourceLocations("/resources/admin/");
         // Nếu tiền tố là client thì sẽ tự động tìm trong resources
     }
 }

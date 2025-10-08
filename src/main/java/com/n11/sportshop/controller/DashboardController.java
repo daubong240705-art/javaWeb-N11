@@ -5,10 +5,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
+
 @Controller
 public class DashboardController {
     @GetMapping("/")
     public String getHelloWorldPage(Model model) {
         return "client/homepage/index";
     }
+
+    @GetMapping("/admin")
+    public String getDashBoardPage() {
+        return "admin/dashboard/show";
+    }
+    
 }
